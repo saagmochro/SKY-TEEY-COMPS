@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SKY TEEY</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo"></div>
+
+    <nav>
+     
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="topbg">
+    <h5 class="h5">SKY-TEEY</h5>
+    <h1>DESIGN<> <span class="highlight">PRINT<></span> BRAND <br/> </h1>
+    <p class="p">FAST, QUALITY & EFFICIENT</p>
+    <a href="#" class="btn">More About →</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>What We Do</h2>
+    <p>Quality work at an affordable price...</p>
+    <div class="card-container">
+
+    <a class="card" href="Designs page.html">
+        <img src="https://i.pinimg.com/736x/0f/15/3d/0f153dde7df00dcbf8674f820eba855a.jpg" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        </a>
+      <a class="card" href=""> 
+        <img src="https://i.pinimg.com/736x/f8/8d/f9/f88df993b5eb0bbaaf1d6e556677af9d.jpg" alt="Web Design">
+        <h3>JOB APLLICATIONS</h3>
+      </a>
+      <a class="card" href="">
+        <img src="https://i.pinimg.com/736x/fa/cd/1b/facd1b936bb1e6ec0a505896f08863a1.jpg" alt="Web Development">
+        <h3>COMPANY PROFILES DESIGN</h3>
+      </a>
+       <a class="card" href=""> 
+        <img src="https://i.pinimg.com/736x/06/d2/eb/06d2eb23ec8e2c4ac620f2ed39ea46f2.jpg" alt="Web Development">
+        <h3>SCHOOL PROJECTS</h3>
+     </a>
+       <a  class="card" href=""> 
+        <img src="https://i.pinimg.com/736x/54/c8/77/54c87715239a0ecae5c76df51b22b6d1.jpg" alt="Web Development">
+        <h3>BUSINESS PLANS</h3>
+        </a>
+      <a class="card"  href="">
+        <img src="https://i.pinimg.com/736x/5f/c5/6d/5fc56d2f413a0253f3b2d72eba4e8654.jpg" alt="Web Development">
+        <h3>VISA APPLICATIONS</h3>
+        </a>
+     <a class="card" href="">
+        <img src="https://i.pinimg.com/736x/7b/2d/b2/7b2db207c68b2e41717fdf73589a24b6.jpg" alt="Web Development">
+        <h3>RESUMES</h3>
+      </a>
+      <a class="card" href="">
+        <img src="https://i.pinimg.com/736x/38/94/64/389464f20ddf66100df169dbb7ef6d37.jpg" alt="Web Development">
+        <h3>TYPE SETTING</h3>
+      </a>
+    </div>
+  </section>
+  <STyle>
+/* General Reset */
+.p{
+  color:white;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ .h5{
+  margin-top: 10px;
+ }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-weight: bolder;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #0f1d36;
+  box-shadow: 0 2px 5px rgba(100, 11, 93, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  
+}
+
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #af2999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #af2999;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a.active {
+  color: #af2999;
+}
+
+/* Hero Section */
+.hero {
+  background:url(bg\ 6.jpg);
+  text-align: center;
+  padding: 100px 20px;
+  color: #ff00d4;
+  position: relative;
+  
+}
+
+.hero h5 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #0835ff;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  background: #fff;
+  color: #0a228a;
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #da19b0;
+}
+
+/* Services Section */
+.services {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.services p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #666;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  padding: 20px;
+  font-size: 20px;
+  color: #333;
+}
+</Style>
+</body>
+</html>
