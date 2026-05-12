@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="cyber café Nairobi CBD, printing services Nairobi, KRA iTax Kenya, business registration Kenya, HELB application, document formatting, design services, photocopy services" />
+  <meta name="description" content="Skyteey Computers Blog: Expert guides on cyber café services, KRA tax filing, business registration, HELB help, design tips, and digital solutions for Kenyan businesses." />
+  <meta name="author" content="Skyteey Computers" />
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Skyteey Computers Blog | Digital Services & KRA Guides" />
+  <meta property="og:description" content="Learn about KRA tax filing, business registration, printing services, design tips, and digital solutions for Kenya." />
+  <meta property="og:url" content="https://www.skyteeycomputers.com/blog.html" />
+  <meta property="og:image" content="images/skyteey.png" />
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Skyteey Computers Blog" />
+  <meta name="twitter:description" content="Expert guides on printing, KRA services, business registration, and digital solutions." />
+  <!-- Additional SEO Meta Tags -->
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+  <link rel="shortcut icon" href="images/skyteey.png" type="">
+
+  <title>Skyteey Computers Blog | Cyber Café, Printing & KRA Services Guide</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Schema.org Structured Data for Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Skyteey Computers Blog",
+    "url": "https://www.skyteeycomputers.com/blog.html",
+    "description": "Expert guides on cyber café services, KRA tax filing, business registration, printing, and digital solutions in Kenya.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Skyteey Computers",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "images/skyteey.png"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* Modern Blog Styles */
+    .blog-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 123, 255, 0.2);
+    }
+
+    .blog-card-image {
+      width: 100%;
+      height: 240px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-card-image.print {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .blog-card-image.tax {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .blog-card-image.business {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+
+    .blog-card-image.helb {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    }
+
+    .blog-card-image.design {
+      background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    }
+
+    .blog-card-image.doc {
+      background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    }
+
+    .blog-card-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+
+    .blog-card:hover .blog-card-image::after {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .blog-card-content {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card-date {
+      color: #007bff;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .blog-card-title {
+      color: #333;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+
+    .blog-card-description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .blog-card-tags {
+      color: #555;
+      font-size: 13px;
+      margin-bottom: 16px;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+
+    .blog-card-button {
+      align-self: flex-start;
+      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+      border: none;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .blog-card-button:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    }
+
+    .blog-header {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeInDown 0.6s ease;
+    }
+
+    .blog-header h1 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #333;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .blog-header p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .blog-cta-link {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid #007bff;
+      transition: all 0.3s ease;
+    }
+
+    .blog-cta-link:hover {
+      color: #0056b3;
+      border-bottom-color: #0056b3;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .blog-row {
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .blog-cta-section {
+      text-align: center;
+      margin-top: 60px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+      border-radius: 12px;
+    }
+
+    .blog-cta-section .btn {
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .blog-cta-section .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+    }
+  </style>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero.jpeg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/skyteey.png" alt="Logo" style="height: 50px;">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book.html">Message us</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <a class="cart_link" href="#">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                    </g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="https://wa.me/254711753614" class="order_online">
+                Talk to us
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- blog section -->
+
+  <section class="food_section layout_padding">
+    <div class="container">
+      <div class="blog-header">
+        <h1>Skyteey Computers Blog</h1>
+        <p>Explore cyber café services, KRA tax filing, business registration, design trends, document formatting, and practical tips for Nairobi CBD businesses and students.</p>
+        <p style="font-size: 14px; color: #333; margin-top: 16px;"><strong>Need help?</strong> WhatsApp <a href="https://wa.me/254711753614" class="blog-cta-link">+254711753614</a> | Open 9 AM – 9 PM Daily</p>
+      </div>
+
+      <div class="row blog-row" style="margin-top: 40px;" id="blogContainer">
+        <!-- Blog posts will be generated here by JavaScript -->
+      </div>
+
+      <div style="text-align: center; margin: 40px 0;">
+        <button id="exploreBtnToggle" class="btn btn-primary" style="padding: 14px 40px; font-size: 16px; font-weight: 600; background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;" onclick="toggleExploreBlogs()">
+          <i class="fa fa-book"></i> Explore All Blogs
+        </button>
+      </div>
+
+      <div class="blog-cta-section">
+        <a href="https://wa.me/254711753614" target="_blank" class="btn btn-primary">
+          <i class="fa fa-whatsapp"></i> Chat with Skyteey Computers on WhatsApp
+        </a>
+        <p style="margin-top: 20px; font-size: 14px; color: #666;">
+          <strong>Tom Mboya Street, Nairobi CBD</strong> | Call: +254 711 753 614 | Email: info@skyteeycomputers.co.ke<br>
+          Open: 9 AM – 9 PM Daily
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- end blog section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contact Us
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/KQikifea4U4EDPFWA?g_st=ac" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Tom Mboya Street, Nairobi Kenya.
+                </span>
+              </a>
+              <a href="tel:+254711753614">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +254 711 753 614
+                </span>
+              </a>
+              <a href="mailto:info@skyteeycomputers.co.ke">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  info@skyteeycomputers.co.ke
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Skyteey Comps
+            </a>
+            <p>
+              Design-Print-Brand
+            </p>
+            <div class="footer_social">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Opening Hours
+          </h4>
+          <p>
+            Everyday
+          </p>
+          <p>
+            09.00 Am -09.00 Pm
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span class="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Skyteey computers ltd</a><br><br>
+          &copy; <span class="displayYear"></span> Designed By
+          <a style="color: yellow;" href="https://wa.me/254112157020" target="_blank">SG</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  
+  <!-- Blog Posts Data & Auto-Generation Script -->
+  <script>
+    // Blog posts data with rotation schedule
+    const allBlogPosts = [
+      {
+        id: 1,
+        imageFile: 'images/CyberCafe.jpg',
+        imageFallback: '',
+        imageClass: 'print',
+        title: 'Cyber Café Services in Nairobi CBD',
+        description: 'Skyteey Computers offers fast, affordable, and reliable cyber café services. From high-speed internet browsing to professional printing, scanning, photocopying, and document preparation – we handle all your digital needs in one convenient location.',
+        tags: 'Printing • Scanning • Photocopying • Internet • Document Prep • Online Applications',
+        cta: 'Get Pricing',
+        startMonth: 5, // May
+        startYear: 2026
+      },
+      {
+        id: 2,
+        imageFile: 'images/HELB.jpeg',
+        imageFallback: '',
+        imageClass: 'tax',
+        title: 'KRA iTax Filing & Tax Compliance Kenya',
+        description: 'Stay compliant with KRA tax deadlines! Skyteey Computers helps you file taxes via iTax portal, understand compliance requirements, and meet all Kenya Revenue Authority deadlines. Expert guidance for individuals and businesses.',
+        tags: 'iTax login • Tax deadlines • VAT compliance • Returns filing • PIN registration',
+        cta: 'Tax Filing Help',
+        startMonth: 11, // November
+        startYear: 2025
+      },
+      {
+        id: 3,
+        imageFile: 'images/business.jpg',
+        imageFallback: '🏢',
+        imageClass: 'business',
+        title: 'Business Registration in Kenya (eCitizen)',
+        description: 'Start your business the right way! Register your company via eCitizen, get permits, and comply with Kenyan regulations. Skyteey Computers provides step-by-step guidance, document preparation, and payment support.',
+        tags: 'eCitizen registration • Company names • Permits • KRA PIN • Licensing • Compliance',
+        cta: 'Start Your Business',
+        startMonth: 11,
+        startYear: 2025
+      },
+      {
+        id: 4,
+        imageFile: 'images/HELB.jpeg',
+        imageFallback: '🎓',
+        imageClass: 'helb',
+        title: 'HELB Loans & Student Services Kenya',
+        description: 'Students: Apply for HELB loans easily at Skyteey Computers! We help with online applications, documentation, and KYC verification. Get access to affordable student loans to support your education in Kenya.',
+        tags: 'HELB application • Student loans • Online verification • Payment options • Repayment info',
+        cta: 'HELB Support',
+        startMonth: 5,
+        startYear: 2026
+      },
+      {
+        id: 5,
+        imageFile: 'images/corel.jpeg',
+        imageFallback: '🎨',
+        imageClass: 'design',
+        title: 'Design Trends: CorelDRAW & Photoshop 2026',
+        description: 'Master modern design trends! Learn the latest in graphic design using CorelDRAW and Photoshop. Bold colors, 3D effects, and AI-powered tools are transforming design in Kenya. Create stunning visuals for your business.',
+        tags: 'Design trends • Vector graphics • Photo editing • AI tools • Logo design • Branding',
+        cta: 'Design Services',
+        startMonth: 5,
+        startYear: 2026
+      },
+      {
+        id: 6,
+        imageFile: 'images/writing pen.jpg',
+        imageFallback: '📄',
+        imageClass: 'doc',
+        title: 'Professional Document Formatting (CV, Proposals)',
+        description: 'Make your CV stand out! Expert document formatting for CVs, proposals, reports, and applications. Professional layouts, ATS-optimized resumes, and quality printing at Skyteey Computers. Get hired with a polished CV!',
+        tags: 'CV formatting • Proposal design • Report layout • Cover letters • Quality printing',
+        cta: 'CV Services',
+        startMonth: 5,
+        startYear: 2026
+      },
+      {
+        id: 7,
+        imageFile: 'images/CyberSecurity.jpg',
+        imageFallback: 'shield',
+        imageClass: 'print',
+        title: 'Cyber Service Safety: Essential Tips',
+        description: 'Stay safe at cyber cafes! Learn essential safety tips for using public computers. Protect passwords, avoid phishing, secure data, and use VPNs safely. Expert guidance for Nairobi CBD users.',
+        tags: 'Cybersecurity • Password safety • Phishing • Data protection • VPN usage',
+        cta: 'Security Tips',
+        startMonth: 11,
+        startYear: 2025
+      },
+      {
+        id: 8,
+        imageFile: 'images/Ai254.jpg',
+        imageFallback: 'robot',
+        imageClass: 'design',
+        title: 'Latest AI and Technology Tools',
+        description: 'Discover cutting-edge AI and tech tools transforming cyber cafes! From ChatGPT to automation, learn how innovative tools boost productivity and streamline operations at Skyteey Computers.',
+        tags: 'AI tools • ChatGPT • Automation • Tech trends • Productivity • Innovation',
+        cta: 'Explore Tech',
+        startMonth: 5,
+        startYear: 2026
+      },
+      {
+        id: 9,
+        imageFile: 'images/cbd img.jpg',
+        imageFallback: 'city',
+        imageClass: 'business',
+        title: 'Nairobi CBD Business Trends',
+        description: 'What is trending in Nairobi CBD? Discover local business needs, customer preferences, and service demands in the central business district. Learn how to position services effectively.',
+        tags: 'Nairobi CBD • Local trends • Business insights • Market analysis • Needs',
+        cta: 'View Trends',
+        startMonth: 11,
+        startYear: 2025
+      },
+      {
+        id: 10,
+        imageFile: 'images/common-mistakes.jpeg',
+        imageFallback: 'warning',
+        imageClass: 'tax',
+        title: 'Common Mistakes and Solutions',
+        description: 'Are you making costly mistakes? From improper formatting to missed tax deadlines, learn the most common errors and proven solutions to prevent them.',
+        tags: 'Mistake prevention • Best practices • Tax errors • Document errors • Solutions',
+        cta: 'Learn More',
+        startMonth: 5,
+        startYear: 2026
+      },
+      {
+        id: 11,
+        imageFile: 'images/printer.jpg',
+        imageFallback: 'money',
+        imageClass: 'helb',
+        title: 'Digital Services Pricing Guide',
+        description: 'Understand digital services pricing at Skyteey. Compare rates, value propositions, and find affordable solutions for printing, design, and online services in Nairobi.',
+        tags: 'Pricing • Value • Affordability • Service rates • Budget • Cost comparison',
+        cta: 'Check Pricing',
+        startMonth: 11,
+        startYear: 2025
+      }
+    ];
+
+    // Variable to track if all blogs are displayed
+    let showAllBlogs = false;
+
+    // Function to toggle explore blogs
+    function toggleExploreBlogs() {
+      showAllBlogs = !showAllBlogs;
+      renderBlogPosts();
+      const btn = document.getElementById('exploreBtnToggle');
+      if (showAllBlogs) {
+        btn.innerHTML = '<i class="fa fa-compress"></i> Show Featured Blogs';
+      } else {
+        btn.innerHTML = '<i class="fa fa-book"></i> Explore All Blogs';
+      }
+    }
+    function getActivePostsForCurrentDate() {
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      const currentMonth = today.getMonth() + 1; // 1-12
+      
+      // Determine the 6-month cycle (0 = May-Oct, 1 = Nov-Apr)
+      const cycle = currentMonth >= 11 || currentMonth <= 4 ? 1 : 0;
+      
+      // Filter posts that should be active in current cycle
+      let activePosts = [];
+      
+      if (cycle === 0) { // May-October
+        activePosts = allBlogPosts.filter(post => (post.startMonth >= 5 && post.startMonth <= 10));
+      } else { // November-April
+        activePosts = allBlogPosts.filter(post => (post.startMonth >= 11 || post.startMonth <= 4));
+      }
+      
+      // If no posts found, show all (fallback)
+      if (activePosts.length === 0) {
+        activePosts = allBlogPosts;
+      }
+      
+      return activePosts.slice(0, 6);
+    }
+
+    // Function to format date based on post schedule
+    function getPostDate(post) {
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      const currentMonth = today.getMonth() + 1;
+      
+      let month = post.startMonth;
+      let year = post.startYear;
+      
+      // Adjust year if needed
+      if (month < currentMonth && month <= 4) {
+        year = currentYear;
+      } else if (month >= 11 && month > currentMonth) {
+        year = currentYear - 1;
+      } else if (month >= 5 && month <= 10) {
+        year = currentYear;
+      }
+      
+      const date = new Date(year, month - 1, 1);
+      const monthName = date.toLocaleString('default', { month: 'long' });
+      return `${monthName} ${year}`;
+    }
+
+    // Function to render blog cards
+    function renderBlogPosts() {
+      const container = document.getElementById('blogContainer');
+      let activePosts = showAllBlogs ? allBlogPosts : getActivePostsForCurrentDate();
+      
+      let html = '';
+      activePosts.forEach(post => {
+        const postDate = getPostDate(post);
+        html += `
+          <div class="col-lg-6 col-12" style="margin-bottom: 30px;">
+            <div class="blog-card">
+              <div class="blog-card-image ${post.imageClass}" style="display: flex; align-items: center; justify-content: center; background-size: cover; background-position: center;">
+                <img src="${post.imageFile}" alt="${post.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.parentElement.innerHTML = '${post.imageFallback}'">
+              </div>
+              <div class="blog-card-content">
+                <div class="blog-card-date"><i class="fa fa-calendar"></i> ${postDate}</div>
+                <h3 class="blog-card-title">${post.title}</h3>
+                <p class="blog-card-description">${post.description}</p>
+                <div class="blog-card-tags">
+                  <strong>Topics:</strong> ${post.tags}
+                </div>
+                <a href="https://wa.me/254711753614" class="blog-card-button">
+                  <i class="fa fa-whatsapp"></i> ${post.cta}
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      
+      container.innerHTML = html;
+    }
+
+    // Render posts when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      renderBlogPosts();
+    });
+  </script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

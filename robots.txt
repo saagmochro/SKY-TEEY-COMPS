@@ -1,0 +1,11 @@
+# Skyteey Computers - robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://www.skyteeycomputers.com/sitemap.xml
